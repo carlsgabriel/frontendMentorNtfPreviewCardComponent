@@ -149,7 +149,14 @@ hr{
 }
 
 .attribution{
+    color: #FFF;
     position: absolute;
     right: 0;
     bottom: 0;
+}
+
+@media(max-width:500px){
+    .component-container{
+        margin: 4px;
+    }
 }
