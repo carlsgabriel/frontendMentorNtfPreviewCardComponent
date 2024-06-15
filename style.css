@@ -19,13 +19,14 @@ body{
 main{
     background-color: hsla(217, 54%, 11%, 10%);
     max-width: 450px;
-    border-radius: 15px;
+    border-radius: 50px;
 }
 
 .component-container{
     margin: 32px;
+    padding-bottom: 30px;
     background-color: hsla(214, 61%, 8%, 0.253);
-    border-radius: 40px;
+    border-radius: 55px;
 }
 
 .component-container-2{
@@ -35,20 +36,46 @@ main{
     border-radius: 15px;
 }
 
-.component-img img{
-    display: block;
-    max-width: 100%;
+.component-img{
+    background-image: url('images/image-equilibrium.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 300px;
     border-radius: 10px;
 }
 
-.component-h1{
+.component-img-hover{
+    width: 100%;
+    height: 100%;
+    background-color: hsla(178, 100%, 50%, 50%);
+    display: none;
+}
+
+.component-img:hover .component-img-hover{
+    display: flex;
+}
+
+.component-img-hover a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.component-aH1{
     margin: 20px 0;
 }
 
-.component-h1 h1{
+.component-aH1 a{
     color: hsl(0, 0%, 100%);
     font-size: 22px;
     font-weight: 600;
+    text-decoration: none;
+}
+
+.component-aH1 a:hover{
+    color: hsl(178, 100%, 50%);
 }
 
 .component-p p{
@@ -87,12 +114,13 @@ hr{
     border: none;
     height: 1px;
     background-color: hsl(215, 32%, 27%);
-    margin: 25px 0;
+    margin: 25px 0 15px 0;
 }
 
 .component-profile{
     display: flex;
     align-items: center;
+    margin-bottom: 10px;
 }
 
 .component-profile img{
@@ -102,17 +130,22 @@ hr{
     border-radius: 50%;
 }
 
-.component-profile p{
+.component-profile span{
     color: hsl(215, 51%, 70%);
     margin-left: 16px;
 }
 
-.component-profile span{
+.component-profile a{
     color: hsl(0, 0%, 100%);
+    text-decoration: none;
 }
 
 .white{
     color: hsl(0, 0%, 100%);
+}
+
+.component-profile a:hover{
+    color: hsl(178, 100%, 50%);
 }
 
 .attribution{
